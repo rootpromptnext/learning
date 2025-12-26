@@ -184,112 +184,66 @@
 
                         <!-- Curriculum Accordion Start -->
                         <div id="Curriculum-accordian">
-                            <!-- Panel 0.1: LINUX & Shell Scirpting ESSENTIALS FOR DEVOPS -->
-                            <div class="panel panel-default clp-section_accord_bx">
-                                <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#module1" aria-expanded="false">
-                                    <h3 class="panel-title d-flex justify-content-between align-items-center">
-                                        <span>LINUX ESSENTIALS FOR DEVOPS</span>
-                                        <button class="btn btn-primary toggle-btn">+</button>
-                                    </h3>
-                                </div>
-                                <div id="module1" class="panel-collapse collapse" aria-expanded="false" data-parent="#Curriculum-accordian">
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li>Intro to Linux: Installing Ubuntu on AWS</li>
-                                            <li>Basic Commands: Navigating file system</li>
-                                            <li>User Management: Groups, permissions</li>
-                                            <li>Admin Access: Using sudo</li>
-                                            <li>Web Servers: Apache & Nginx setup</li>
-                                            <li>Shell Scripting: Variables, input, operators, loops, functions</li>
-                                            <li>File Operations: cut, awk, sed, grep</li>
-                                        </ul>
-                                    </div>
+
+
+                        <!-- Panel: DEVOPS WITH GENAI -->
+                        <div class="panel panel-default clp-section_accord_bx">
+                            <div class="panel-heading accordion-toggle collapsed"
+                                 data-toggle="collapse"
+                                 data-target="#module-genai"
+                                 aria-expanded="false">
+                                <h3 class="panel-title d-flex justify-content-between align-items-center">
+                                    <span>DEVOPS WITH GENAI – DOCKER, KUBERNETES & CI/CD IN ACTION</span>
+                                    <button class="btn btn-primary toggle-btn">+</button>
+                                </h3>
+                            </div>
+                        
+                            <div id="module-genai"
+                                 class="panel-collapse collapse"
+                                 aria-expanded="false"
+                                 data-parent="#Curriculum-accordian">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>What is GenAI? (Beginner-friendly explanation)</li>
+                                        <li>How GenAI applications work (Prompt → Inference → Response)</li>
+                                        <li>Understanding AI Chatbot architecture (Frontend, Backend, LLM API)</li>
+                                        <li>Overview of Large Language Models (LLMs)</li>
+                                        <li>CPU vs GPU usage in GenAI applications (high level)</li>
+                        
+                                        <li><b>Docker for GenAI Applications</b>
+                                            <ul>
+                                                <li>Containerizing an AI chatbot application</li>
+                                                <li>Writing a Dockerfile for a Python Flask app</li>
+                                                <li>Running chatbot in Docker (Free mode vs API mode)</li>
+                                                <li>Docker image build and push to DockerHub</li>
+                                            </ul>
+                                        </li>
+                        
+                                        <li><b>Kubernetes for GenAI Applications</b>
+                                            <ul>
+                                                <li>Deploying chatbot on Kubernetes</li>
+                                                <li>Understanding Pod, Deployment, and Service</li>
+                                                <li>Scaling chatbot replicas</li>
+                                                <li>Managing environment variables and secrets</li>
+                                            </ul>
+                                        </li>
+                        
+                                        <li><b>CI/CD using GitHub Actions</b>
+                                            <ul>
+                                                <li>What is CI/CD in real-world projects?</li>
+                                                <li>Automated Docker image build using GitHub Actions</li>
+                                                <li>Pushing images to DockerHub</li>
+                                                <li>Deploying application to Kubernetes using CI/CD</li>
+                                            </ul>
+                                        </li>
+                        
+                                        <li>End-to-end DevOps demo: Code → Docker → Kubernetes → CI/CD</li>
+                                        <li>Best practices for deploying GenAI applications safely</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <!-- Panel 0.3: AWS ESSENTIALS FOR DEVOPS -->
-                            <div class="panel panel-default clp-section_accord_bx">
-                                <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#module3" aria-expanded="false">
-                                    <h3 class="panel-title d-flex justify-content-between align-items-center">
-                                        <span>AWS ESSENTIALS FOR DEVOPS</span>
-                                        <button class="btn btn-primary toggle-btn">+</button>
-                                    </h3>
-                                </div>
-                                <div id="module3" class="panel-collapse collapse" aria-expanded="false" data-parent="#Curriculum-accordian">
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li>AWS Basics: Overview, global infrastructure, DevOps benefits, IaaS/PaaS/SaaS, real-world use cases</li>
-                                            <li>Networking: Regions, AZs, Edge Locations</li>
-                                            <li>Compute: EC2 basics, launching & managing instances, AMIs, instance types, key pairs</li>
-                                            <li>Storage: S3 buckets</li>
-                                            <li>VPC Fundamentals: VPC setup, subnets, IP addressing, route tables, IGW, NAT</li>
-                                            <li>Databases: Amazon RDS basics</li>
-                                            <li>Route 53: DNS hosting, hosted zones</li>
-                                            <li>IAM: Users, groups, roles, policies</li>
-                                            <li>Secrets Manager: Secure credential storage</li>
-                                            <li>ACM: SSL/TLS certificate management</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-<!-- Panel: DEVOPS WITH GENAI -->
-<div class="panel panel-default clp-section_accord_bx">
-    <div class="panel-heading accordion-toggle collapsed"
-         data-toggle="collapse"
-         data-target="#module-genai"
-         aria-expanded="false">
-        <h3 class="panel-title d-flex justify-content-between align-items-center">
-            <span>DEVOPS WITH GENAI – DOCKER, KUBERNETES & CI/CD IN ACTION</span>
-            <button class="btn btn-primary toggle-btn">+</button>
-        </h3>
-    </div>
-
-    <div id="module-genai"
-         class="panel-collapse collapse"
-         aria-expanded="false"
-         data-parent="#Curriculum-accordian">
-        <div class="panel-body">
-            <ul>
-                <li>What is GenAI? (Beginner-friendly explanation)</li>
-                <li>How GenAI applications work (Prompt → Inference → Response)</li>
-                <li>Understanding AI Chatbot architecture (Frontend, Backend, LLM API)</li>
-                <li>Overview of Large Language Models (LLMs)</li>
-                <li>CPU vs GPU usage in GenAI applications (high level)</li>
-
-                <li><b>Docker for GenAI Applications</b>
-                    <ul>
-                        <li>Containerizing an AI chatbot application</li>
-                        <li>Writing a Dockerfile for a Python Flask app</li>
-                        <li>Running chatbot in Docker (Free mode vs API mode)</li>
-                        <li>Docker image build and push to DockerHub</li>
-                    </ul>
-                </li>
-
-                <li><b>Kubernetes for GenAI Applications</b>
-                    <ul>
-                        <li>Deploying chatbot on Kubernetes</li>
-                        <li>Understanding Pod, Deployment, and Service</li>
-                        <li>Scaling chatbot replicas</li>
-                        <li>Managing environment variables and secrets</li>
-                    </ul>
-                </li>
-
-                <li><b>CI/CD using GitHub Actions</b>
-                    <ul>
-                        <li>What is CI/CD in real-world projects?</li>
-                        <li>Automated Docker image build using GitHub Actions</li>
-                        <li>Pushing images to DockerHub</li>
-                        <li>Deploying application to Kubernetes using CI/CD</li>
-                    </ul>
-                </li>
-
-                <li>End-to-end DevOps demo: Code → Docker → Kubernetes → CI/CD</li>
-                <li>Best practices for deploying GenAI applications safely</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
+                        </div>
+                     </div>
 
                     <h2 class="mb-3">Related Courses</h2>
                     <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
