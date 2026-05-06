@@ -62,6 +62,59 @@
 </section>
 
 <section data-bs-version="5.1" class="form7 cid-vdi8a8vvw3" id="form7-2e">
+  <div class="container">
+    <div class="mbr-section-head">
+      <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-5">
+        <strong>Register</strong>
+      </h3>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+        <form onsubmit="sendToWhatsApp(); return false;" class="mbr-form form-with-styler mx-auto" data-form-title="Form Name">
+          <p class="mbr-text mbr-fonts-style align-center mb-4 display-7">
+            To Register for the course fill this form <br> Someone from our team will contact you
+          </p>
+          <div class="row">
+            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">
+              Thanks for filling out the form!
+            </div>
+            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+              Oops...! some problem!
+            </div>
+          </div>
+          <div class="dragArea row">
+            <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="name">
+              <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" id="name-form7-2e" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="email">
+              <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" id="email-form7-2e" required>
+            </div>
+            <div data-for="phone" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+              <input type="tel" name="phone" placeholder="Phone" data-form-field="phone" class="form-control" id="phone-form7-2e" required>
+            </div>
+            <div class="col-auto mbr-section-btn align-center">
+              <button type="submit" class="btn btn-primary display-4">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function sendToWhatsApp() {
+  const name = document.getElementById("name-form7-2e").value;
+  const email = document.getElementById("email-form7-2e").value;
+  const phone = document.getElementById("phone-form7-2e").value;
+
+  const message = `New Registration:%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}`;
+
+  window.location.href = `https://wa.me/918421218824?text=${message}`;
+}
+</script>
+
+<section data-bs-version="5.1" class="form7 cid-vdi8a8vvw3" id="form7-2e">
     
     
     <div class="container">
